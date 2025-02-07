@@ -1,0 +1,157 @@
+@import "../_abstracts/variables";
+@import "../_abstracts/mixins";
+
+.post-card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 327px;
+  padding: 24px;
+  background: $white-color;
+  border: 1px solid $gray-950-color;
+  border-radius: 20px;
+  box-shadow: 8px 8px 0px black;
+
+  @include on-desktop {
+    width: 384px;
+  }
+
+  &__heading {
+    box-sizing: border-box;
+    height: 200px;
+    flex: 0 0 auto;
+    align-self: stretch;
+    overflow: hidden;
+    border-radius: 10px;
+    background: $yellow-color;
+
+    &-image {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      max-width: initial;
+      height: 200px;
+    }
+  }
+
+  &__content {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+    align-self: stretch;
+    justify-content: flex-start;
+
+    &-button {
+      box-sizing: border-box;
+      display: block;
+      flex: 0 0 auto;
+      width: 73px;
+      min-width: 73px;
+      height: 26px;
+      font-family: $font-family;
+      font-size: 12px;
+      font-weight: $font-weight-bold;
+      color: $gray-950-color;
+      cursor: pointer;
+      background-color: $yellow-color;
+      border: none;
+      border-radius: 4px;
+
+      @include on-desktop {
+        width: 82px;
+        min-width: 82px;
+        height: 29px;
+        font-size: 14px;
+      }
+    }
+
+    &-info {
+      flex: 0 0 auto;
+      padding: 0;
+      margin: 0;
+      font-family: $font-family;
+      font-size: 12px;
+      font-weight: $font-weight-light;
+      color: $gray-950-color;
+
+      @include on-desktop {
+        font-size: 14px;
+      }
+    }
+
+    &-heading {
+      flex: 0 0 auto;
+      align-self: stretch;
+      padding: 0;
+      margin: 0;
+      font-family: $font-family;
+      font-size: 20px;
+      font-weight: $font-weight-bold;
+      color: $gray-950-color;
+      text-align: left;
+
+      @include hover(color, $yellow-color);
+      @include hover(cursor, pointer);
+
+      @include on-desktop {
+        font-size: 24px;
+      }
+    }
+
+    &-text {
+      flex: 0 0 auto;
+      align-self: stretch;
+      padding: 0;
+      margin: 0;
+      font-family: $font-family;
+      font-size: 14px;
+      font-weight: $font-weight-light;
+      line-height: 21px;
+      color: $gray-500-color;
+      text-align: left;
+
+      @include on-desktop {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  &__author {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    justify-content: flex-start;
+
+    &-image {
+      box-sizing: border-box;
+      display: block;
+      flex: 0 0 auto;
+      width: 32px;
+      max-width: initial;
+      height: 32px;
+      border: none;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    &-name {
+      flex: 0 0 auto;
+      padding: 0;
+      margin: 0;
+      font-family: $font-family;
+      font-size: 14px;
+      font-weight: $font-weight-bold;
+      color: $gray-950-color;
+    }
+  }
+}
