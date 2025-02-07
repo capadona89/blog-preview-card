@@ -44,6 +44,6 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [](https://www.frontendmentor.io/profile/capadona89)
-- GitHub - [](https://github.com/capadona89)
+- Frontend Mentor - [profile](https://www.frontendmentor.io/profile/capadona89)
+- GitHub - [profile](https://github.com/capadona89)
 
