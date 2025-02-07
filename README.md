@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://github.com/capadona89/blog-preview-card)
-- Live Site URL: [](https://capadona89.github.io/blog-preview-card/)
+- Solution URL: [GitHub](https://github.com/capadona89/blog-preview-card)
+- Live Site URL: [GitHub Pages](https://capadona89.github.io/blog-preview-card/)
 
 ### Built with
 
